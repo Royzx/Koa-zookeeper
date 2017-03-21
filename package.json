@@ -1,0 +1,32 @@
+{
+  "name": "koa-zookeeper",
+  "version": "1.0.0",
+  "description": "koa框架调用zookeeper服务",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Royzx/koa-zookeeper.git"
+  },
+  "keywords": [
+    "koa",
+    "zookeeper"
+  ],
+  "author": "Roy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Royzx/koa-zookeeper/issues"
+  },
+  "homepage": "https://github.com/Royzx/koa-zookeeper#readme",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-logger": "^2.0.1",
+    "koa-router": "^5.4.0",
+    "node-zookeeper-dubbo": "^2.1.7"
+  }
+}

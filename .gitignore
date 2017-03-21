@@ -1,0 +1,10 @@
+#folder
+dist/
+node_modules/
+bower_components/
+
+#file
+.DS_Store
+npm-debug.log
+*.log
+*.txt
