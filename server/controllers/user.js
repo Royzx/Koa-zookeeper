@@ -2,18 +2,18 @@ const userInfoService = require('./../services/user');
 const userCode = require('./../codes/user');
 
 module.exports = {
-    async getUserInfo() {
+    async getUserInfo(ctx) {
         let result = {
             success: true,
             message: 'getUserInfo',
             data: null,
             code: ''
         }
-        this.body = result;
+        ctx.body = result
     },
 
-    async signIn() {
-        let formData = this.request.body;
+    async signIn(ctx) {
+        let formData = ctx.request.body;
         let result = {
             success: true,
             message: 'getUserInfo',
@@ -28,6 +28,6 @@ module.exports = {
             result.data = userResult;
         }
 
-        this.body = result;
+        ctx.body = result;
     }
 }

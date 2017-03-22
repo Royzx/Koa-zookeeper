@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name": "koa-zookeeper",
+    "script": "server/app.js",
+    "instances": 3,
+    "watch": true,
+    "exec_mode": "cluster"
+  }]
+}

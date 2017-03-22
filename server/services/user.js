@@ -5,18 +5,20 @@ const Dubbo = new nzd(config.zookeeperConfig);
 
 const user = {
     async signIn(formData) {
-        let result = null;
+        let result;
         await Dubbo.Foo
-            .getUserByCorpIdDDID({
-                'class': 'java.lang.String',
+            .getUserByCorpIdDDId({
+                '$class': 'java.lang.String',
                 '$': formData.corpid
             }, {
                 '$class': 'java.lang.String',
                 '$': formData.dduserid
             })
             .then(data => result = data)
-            .then(err => result = err)
+            .catch(err => result = err)
 
         return result;
     }
 }
+
+module.exports = user;
